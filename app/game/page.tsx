@@ -42,6 +42,9 @@ export default function GamePage() {
         style={{ flex: 1, border: 0 }}
         allow="cross-origin-isolated"
       />
+      <div>
+        <p><center>Thanks for playing</center></p>
+        </div>
     </div>
   );
 }
