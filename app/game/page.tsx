@@ -24,7 +24,7 @@ export default function GamePage() {
     }
 
     async function sendTelemetry(payload) {
-        fetch("/api/telemetry", {
+        const res = await fetch("/api/telemetry", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(payload)
@@ -59,7 +59,7 @@ export default function GamePage() {
         <button onClick={logout}>Logout</button>
     </div>
     <iframe
-        src="/game/index.html"
+        src="/game2/index.html"
         style={{ flex: 1, border: 0 }}
         allow="cross-origin-isolated"
     />
